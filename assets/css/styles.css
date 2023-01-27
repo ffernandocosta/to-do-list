@@ -37,3 +37,11 @@ body {
     place-content: center;
     margin: 1rem;
 }
+
+.container {
+    background-color: var(--clr-neutral-100);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+}
