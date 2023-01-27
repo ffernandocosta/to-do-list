@@ -10,6 +10,8 @@
 
     --clr-neutral-200: #E5E5CB;
 
+    --clr-neutral-100: #FFFFFF;
+
 
     /* font-families */
     --ff-primary: 'Poppins', sans-serif;
@@ -23,4 +25,15 @@
 
     /* font-sizes */
     --fs-regular: 1.25rem;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-light-300);
+    color: var(--clr-primary-800);
+    background-color: var(--clr-neutral-200);
+    display: grid;
+    place-content: center;
+    margin: 1rem;
 }
