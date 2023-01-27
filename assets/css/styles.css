@@ -34,7 +34,7 @@ body {
     color: var(--clr-primary-800);
     background-color: var(--clr-neutral-200);
     display: grid;
-    place-content: center;
+    align-items: center;
     margin: 1rem;
 }
 
@@ -44,4 +44,22 @@ body {
     border-radius: 10px;
     overflow: hidden;
     padding: 1rem;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#addtask-input {
+    border-radius: 3px;
+    border: 1px solid var(--clr-primary-800);
+}
+
+#addtask-btn {
+    border: none;
+    border-radius: 3px;
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-100);
 }
