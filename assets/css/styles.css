@@ -1,0 +1,26 @@
+/* variables */
+
+:root {
+    /* colors */
+    --clr-primary-800: #1A120B;
+
+    --clr-secondary-500: #3C2A21;
+
+    --clr-accent-400: #D5CEA3;
+
+    --clr-neutral-200: #E5E5CB;
+
+
+    /* font-families */
+    --ff-primary: 'Poppins', sans-serif;
+
+
+    /* font-weight */
+    --fw-light-300: 300;
+
+    --fw-regular-400: 400;
+
+
+    /* font-sizes */
+    --fs-regular: 1.25rem;
+}
