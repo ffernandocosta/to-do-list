@@ -63,3 +63,11 @@ body {
     background-color: var(--clr-accent-400);
     color: var(--clr-neutral-100);
 }
+
+#clear-tasks-btn {
+    width: 100%;
+    background-color: var(--clr-secondary-500);
+    color: var(--clr-neutral-100);
+    border: none;
+    border-radius: 3px;
+}
