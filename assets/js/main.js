@@ -11,6 +11,7 @@ submitTaskEl.addEventListener("click", (e) => {
     e.preventDefault();
     tasks.push(taskInputEl.value)
     renderTasks()
+    taskInputEl.value = "";
 });
 
 function renderTasks() {
