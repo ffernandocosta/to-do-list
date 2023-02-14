@@ -71,3 +71,7 @@ body {
     border: none;
     border-radius: 3px;
 }
+
+.todo-tasks {
+    list-style: none;
+}
