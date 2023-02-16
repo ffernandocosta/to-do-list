@@ -24,13 +24,13 @@
 
 
     /* font-sizes */
-    --fs-regular: 1.25rem;
+    --fs-regular: 0.975rem;
 }
 
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-regular);
-    font-weight: var(--fw-light-300);
+    font-weight: var(--fw-regular-400);
     color: var(--clr-primary-800);
     background-color: var(--clr-neutral-200);
     display: grid;
@@ -44,6 +44,8 @@ body {
     border-radius: 10px;
     overflow: hidden;
     padding: 1rem;
+    margin: 0 auto;
+    max-width: 420px;
 }
 
 .todo-form {
@@ -65,13 +67,31 @@ body {
 }
 
 #clear-tasks-btn {
-    width: 100%;
     background-color: var(--clr-secondary-500);
     color: var(--clr-neutral-100);
     border: none;
     border-radius: 3px;
+    width: 100%;
 }
 
 .todo-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.task {
+    background-color: var(--clr-neutral-100);
     list-style: none;
+    padding: 16px 18px 16px 18px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px;
+    border-radius: 6px;
+    list-style: inside;
+    overflow-wrap: break-word;
+}
+
+.task::marker {
+    color: var(--clr-accent-400);
 }
