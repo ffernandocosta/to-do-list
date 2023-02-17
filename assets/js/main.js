@@ -3,6 +3,7 @@ let tasks = [];
 
 const taskInputEl = document.getElementById("addtask-input");
 const submitTaskEl = document.getElementById("addtask-btn");
+const clearTaskEl = document.getElementById("clear-tasks-btn");
 const todoListUl = document.querySelector(".todo-tasks");
 
 
@@ -25,3 +26,8 @@ function renderTasks() {
         todoListUl.append(liTaskEl)
     }
 }
+
+clearTaskEl.addEventListener("click", () => {
+    tasks = []
+    renderTasks()
+})
