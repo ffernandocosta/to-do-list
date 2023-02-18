@@ -19,16 +19,16 @@
             
             <form class="todo-form">
 
-                <input type="text" id="addtask-input" placeholder="e.g Go to the gym">
+                <div class="flex-group">
+                    <input type="text" id="addtask-input" placeholder="e.g Go to the gym">
+                    <span class="empty-field-error">Your task cannot be empty</span>
+                </div>
 
                 <button id="addtask-btn">Add task</button>
 
             </form>
 
             <ul class="todo-tasks">
-                <li class="task">Buy gorceries</li>
-                <li class="task">Buy gorceries</li>
-                <li class="task">Buy gorceries</li>
             </ul>
 
             <button id="clear-tasks-btn">Clear all tasks</button>
