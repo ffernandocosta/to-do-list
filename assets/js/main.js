@@ -7,10 +7,18 @@ const clearTaskEl = document.getElementById("clear-tasks-btn");
 const todoListUl = document.querySelector(".todo-tasks");
 
 
+const verifyTaskInputField = (field) => {
+    if (field.value === "") {
+        field.nextElementSibling.classList.add('empty-field-error__showError');
+    } else {
+        tasks.push(taskInputEl.value)
+        field.nextElementSibling.classList.remove('empty-field-error__showError');
+    }
+}
+
 submitTaskEl.addEventListener("click", (e) => {
-    
+    verifyTaskInputField(taskInputEl)
     e.preventDefault();
-    tasks.push(taskInputEl.value)
     renderTasks()
     taskInputEl.value = "";
 });
