@@ -27,6 +27,14 @@
     --fs-regular: 0.975rem;
 }
 
+/* utilities */
+
+.flex-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-regular);
@@ -64,6 +72,12 @@ body {
     border-radius: 3px;
     background-color: var(--clr-accent-400);
     color: var(--clr-neutral-100);
+    cursor: pointer;
+}
+
+#addtask-btn:hover {
+    background-color: #DCD5B3;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px;
 }
 
 #clear-tasks-btn {
@@ -72,6 +86,12 @@ body {
     border: none;
     border-radius: 3px;
     width: 100%;
+    cursor: pointer;
+}
+
+#clear-tasks-btn:hover {
+    background-color: #603E31;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px;
 }
 
 .todo-tasks {
@@ -94,4 +114,16 @@ body {
 
 .task::marker {
     color: var(--clr-accent-400);
+}
+
+.empty-field-error {
+    font-size: 0.700rem;
+    font-weight: var(--fw-regular-400);
+    color: red;
+    font-style: italic;
+    display: none;
+}
+
+.empty-field-error__showError { 
+    display: block;
 }
