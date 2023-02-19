@@ -3,7 +3,8 @@
     "version": "1.0",
     "name": "MyTodoList",
     "action": {
-        "default_popup": "/assets/html/index.html"
+        "default_popup": "/assets/html/index.html",
+        "default_icon": "/assets/img/icon.png"
     },
     "permissions": [
         "tabs"
