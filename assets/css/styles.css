@@ -22,6 +22,8 @@
 
     --fw-regular-400: 400;
 
+    --fw-medium-500: 500;
+
 
     /* font-sizes */
     --fs-regular: 0.975rem;
@@ -65,6 +67,7 @@ body {
 #addtask-input {
     border-radius: 3px;
     border: 1px solid var(--clr-primary-800);
+    margin-top: 0.700rem;
 }
 
 #addtask-btn {
@@ -105,11 +108,12 @@ body {
 .task {
     background-color: var(--clr-neutral-100);
     list-style: none;
-    padding: 16px 18px 16px 18px;
+    padding: 10px 18px 10px 18px;
     box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px;
     border-radius: 6px;
     list-style: inside;
     overflow-wrap: break-word;
+    font-weight: var(--fw-medium-500);
 }
 
 .task::marker {
