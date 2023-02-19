@@ -6,6 +6,13 @@ const submitTaskEl = document.getElementById("addtask-btn");
 const clearTaskEl = document.getElementById("clear-tasks-btn");
 const todoListUl = document.querySelector(".todo-tasks");
 
+let tasksFromLocalStorage = JSON.parse(localStorage.getItem("myTasks"));
+
+if (tasksFromLocalStorage) {
+    tasks = tasksFromLocalStorage
+    renderTasks()
+}
+
 
 const verifyTaskInputField = (field) => {
     if (field.value === "") {
@@ -17,10 +24,11 @@ const verifyTaskInputField = (field) => {
 }
 
 submitTaskEl.addEventListener("click", (e) => {
-    verifyTaskInputField(taskInputEl)
     e.preventDefault();
-    renderTasks()
+    verifyTaskInputField(taskInputEl)
     taskInputEl.value = "";
+    localStorage.setItem("myTasks", JSON.stringify(tasks))
+    renderTasks()
 });
 
 function renderTasks() {
