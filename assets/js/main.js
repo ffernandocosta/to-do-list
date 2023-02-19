@@ -8,8 +8,8 @@ const todoListUl = document.querySelector(".todo-tasks");
 let tasksFromLocalStorage = JSON.parse(localStorage.getItem("myTasks"));
 
 if (tasksFromLocalStorage) {
-    tasks = tasksFromLocalStorage
-    renderTasks()
+    myTasks = tasksFromLocalStorage
+    render(myTasks)
 }
 
 
@@ -17,7 +17,7 @@ const verifyTaskInputField = (field) => {
     if (field.value === "") {
         field.nextElementSibling.classList.add('empty-field-error__showError');
     } else {
-        tasks.push(taskInputEl.value)
+        myTasks.push(taskInputEl.value)
         field.nextElementSibling.classList.remove('empty-field-error__showError');
     }
 }
@@ -26,11 +26,11 @@ submitTaskEl.addEventListener("click", (e) => {
     e.preventDefault();
     verifyTaskInputField(taskInputEl)
     taskInputEl.value = "";
-    localStorage.setItem("myTasks", JSON.stringify(tasks))
-    renderTasks()
+    localStorage.setItem("myTasks", JSON.stringify(myTasks))
+    render(myTasks)
 });
 
-function renderTasks() {
+function render(tasks) {
 
     todoListUl.innerHTML = "";
     
@@ -43,6 +43,6 @@ function renderTasks() {
 }
 
 clearTaskEl.addEventListener("click", () => {
-    tasks = []
-    renderTasks()
+    myTasks = []
+    render(myTasks)
 })
