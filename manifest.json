@@ -5,8 +5,6 @@
     "action": {
         "default_popup": "/assets/html/index.html",
         "default_icon": "/assets/img/icon.png"
-    },
-    "permissions": [
-        "tabs"
-    ]
+    }
+
 }
