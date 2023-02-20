@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+            
+            <h1>MyTodoList:</h1>
+            <p>Simplify Your Tasks with Ease</p>
+            
+            <form class="todo-form">
+
+                <div class="flex-group">
+                    <input type="text" id="addtask-input" placeholder="e.g Go to the gym">
+                    <span class="empty-field-error">Your task cannot be empty</span>
+                </div>
+
+                <button id="addtask-btn">Add task</button>
+
+            </form>
+
+            <ul class="todo-tasks">
+            </ul>
+
+            <button id="clear-tasks-btn">Clear all tasks</button>
+            
+        </div>
+    </main>
+    
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
