@@ -35,6 +35,8 @@ Users should be able to:
 
 - Solution URL: [Github](https://github.com/ffernandocosta/to-do-list)
 - Live Site URL: [Live version](https://ffernandocosta.github.io/to-do-list/)
+- Download: [Google Chrome Extension](https://chrome.google.com/webstore/detail/mytodolist/eadifgenlolnemlmkipaadphfdgfjnfe?hl=pt-br)
+
 
 ## My process
 
