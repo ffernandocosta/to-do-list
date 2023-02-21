@@ -56,9 +56,10 @@ Users should be able to:
 
 What I learned the most in this project was manipulating the DOM using JavaScript, writing if and else statements to check if a value is truthy or falsey. Creating HTML elements using JavaScript 'createElement' method and also adding a class to that element using 'className' method. It was my first time working with JSON and LocalStorage, I had to do research and learn how to fetch and manipulate dada from the LocalStorage. I learned how to use the 'setItem' method to set an key to the data I want to fetch using the 'getItem' method. Also learned how to manipulate that data changing to a string or an array using 'JSON.parse' and 'JSON.stringify'. Overall this project helped me build the skills I needed to feel more confidant and build more challenging projects in the future.
 
-To see how you can add code snippets, see below:
 
 ```html
+  <h1>Some HTML I am proud of</h1>
+  
   <form class="todo-form">
     
     <div class="flex-group">
@@ -70,7 +71,9 @@ To see how you can add code snippets, see below:
   </form>
 ```
 ```css
-body {
+.proud-of-this-css {
+
+  body {
     font-family: var(--ff-primary);
     font-size: var(--fs-regular);
     font-weight: var(--fw-regular-400);
@@ -79,10 +82,13 @@ body {
     display: grid;
     align-items: center;
     margin: 1rem;
+  }
 }
 ```
 ```js
-const verifyTaskInputField = (field) => {
+const proudOfThisFunc = () => {
+  
+  const verifyTaskInputField = (field) => {
     if (field.value === "") {
         field.nextElementSibling.classList.add('empty-field-error__showError');
     } else {
